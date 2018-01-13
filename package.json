@@ -4,7 +4,8 @@
   "description": "Simple example of how using React with Redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/coldluca/ReactVideoBrowser#readme",
   "dependencies": {
+    "babel-preset-stage-1": "^6.24.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
