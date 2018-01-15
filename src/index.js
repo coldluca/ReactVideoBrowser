@@ -5,6 +5,16 @@ import SearchBar from './components/search_bar';
 import YT_API_KEY from './config';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+
+		this.state = { videos: [] };
+
+		YTSearch({key: YT_API_KEY, term: 'coldplay'}, (videos) => {
+			this.setState({ videos });
+		});
+	}
+
 	render() {
 		return (
 			<div>
