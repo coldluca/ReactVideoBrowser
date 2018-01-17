@@ -10,7 +10,7 @@ class VideoCard extends Component {
   render() {
     return (
       <div className="card col-md-4">
-        <img className="card-img-top" src={this.props.video.snippet.thumbnails.medium.url} alt="Card image cap" />
+        <img className="card-img-left" src={this.props.video.snippet.thumbnails.medium.url} alt="Card image cap" />
         <div className="card-body">
           <h5 className="card-title">{this.props.video.snippet.title}</h5>
           <p className="card-text">{this.props.video.snippet.description}</p>
