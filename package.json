@@ -1,6 +1,6 @@
 {
   "name": "react-video-browser",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple example of how using React with Redux",
   "main": "index.js",
   "scripts": {
