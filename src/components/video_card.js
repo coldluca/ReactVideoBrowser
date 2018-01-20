@@ -9,12 +9,10 @@ class VideoCard extends Component {
 
   render() {
     return (
-      <div className="card col-md-4">
-        <img className="card-img-left" src={this.props.video.snippet.thumbnails.medium.url} alt="Card image cap" />
+      <div onClick={() => this.props.onSelectVideo(this.props.video)} className="card list-group-item">
+        <img className="card-img" src={this.props.video.snippet.thumbnails.medium.url} alt="Card image cap" />
         <div className="card-body">
           <h5 className="card-title">{this.props.video.snippet.title}</h5>
-          <p className="card-text">{this.props.video.snippet.description}</p>
-          <a href="#" className="btn btn-primary">Go somewhere</a>
         </div>
       </div>
     );
